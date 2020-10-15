@@ -25,19 +25,7 @@ class AttachmentDm extends BaseDm {
   }
 
   async getFileDocument(idDocument) {
-    idDocument = this.formatId(idDocument);
-    let sendHeaders = new Headers();
-    sendHeaders.append('tsec', window.sessionStorage.getItem('tsec'));
-
-    let requestOptions = {
-      method: 'GET',
-      headers: sendHeaders,
-      mode: 'cors'
-    };
-    let host = this.extract(this.services, 'attachment.host', '');
-    let path = this.extract(this.services, 'attachment.endPoints.getDocument', '');
-    path = `${path}/${idDocument}/file`;
-    let request = await fetch(`${host}/${path}`, requestOptions);
+    let request = await fetch('./resources/mock/file.txt');
     let responseText = await request.text();
     let hashBase64 = this.separeteMultipartBase64(responseText);
     return hashBase64;

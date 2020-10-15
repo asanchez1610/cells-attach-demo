@@ -1,7 +1,6 @@
 import { CellsPage } from '@cells/cells-page';
 import { html } from 'lit-element';
 import '@bbva-web-components/bbva-button-default';
-import '@quotation-components/cells-access-control-pfco';
 import { attachmentDM } from '../../elements/attach-dm/attach-dm.js';
 
 const utilBehavior = CellsBehaviors.cellsBaseBehaviorPfco;
@@ -27,13 +26,7 @@ class InitPage extends utilBehavior(CellsPage) {
 
   async addListers() {
     await this.updateComplete;
-    window.addEventListener('autentication-pfc-complete', async() => {
-      this.shadowRoot.querySelector('cells-access-control-pfco').maskVisible = false;
-      await this.dowLoadFile();
-    });
-    setTimeout(async() => {
-      await this.shadowRoot.querySelector('#dm-control-access').runEmployeeAuthentication();
-    }, 200);
+    await this.dowLoadFile();
   }
 
   async dowLoadFile() {
@@ -80,18 +73,7 @@ class InitPage extends utilBehavior(CellsPage) {
               @click=${() => this.dowLoadFile() }  ></bbva-button-default>
           </div>
 
-          <cells-access-control-pfco
-                              titleApp = "Demo GetFile"
-                              maskVisible
-                              appId = "13000066"
-                              version = "1.0"
-                              srcLogo = "resources/images/logo_bbva_azul.svg"
-                              urlGrantingTicket = "${window.AppConfig.urlGrantingTicket}"
-                              urlLoginNautilius = "${window.AppConfig.urlLoginNautilius}"
-                              id = "dm-control-access"
-                              ></cells-access-control-pfco>
-
-                              <cells-spinner-global-pfco id = "loadingDetail"  ></cells-spinner-global-pfco>
+          <cells-spinner-global-pfco id = "loadingDetail"  ></cells-spinner-global-pfco>
 
         </div>
       </cells-template-paper-drawer-panel>`;
