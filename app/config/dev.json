@@ -1,0 +1,46 @@
+{
+  "cells_properties": {
+    "deployEndpoint": "",
+    "i18nPath": "locales/",
+    "componentsPath": "./components/",
+    "composerEndpoint": "./composerMocks/",
+    "pagesPath": "./pages/",
+    "appId": "",
+    "debug": true,
+    "mocks": true,
+    "coreCache": true,
+    "routerLog": false,
+    "cordovaScript" : "cordova.js",
+    "prplLevel": 1,
+    "initialBundle": ["init"],
+    "transpile": true,
+    "transpileExclude": ["webcomponentsjs", "moment", "d3", "bgadp*"],
+    "enableLitElement": true,
+    "onlyLitElements": true
+  },
+  "app_properties": {
+    "version": "1.0",
+    "appId": "13000066",
+    "urlGrantingTicket": "https://int-arqaso.work.pe.nextgen.igrupobbva:8050/TechArchitecture/pe/grantingTicket/V02",
+    "urlLoginNautilius": "https://qa-cotiza-i-pe.work-03.platform.bbva.com",
+    "ctts":{},
+    "events": {
+      "globalInvokeRequest": "global-invoke-request",
+      "autenticationPfcoComplete": "autentication-pfc-complete"
+    },
+    "services": {
+      "quotation": {
+        "host": "https://int-arqaso.work.pe.nextgen.igrupobbva:8050",
+        "endPoints": {
+          "parameters": "quotations/v1/parameters"
+        }
+      },
+      "attachment": {
+        "host": "https://int-arqaso.work.pe.nextgen.igrupobbva:8050",
+        "endPoints": {
+          "getDocument": "local-documents/v0/documents"
+        }
+      }
+    }
+  }
+}

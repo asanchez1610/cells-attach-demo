@@ -1,0 +1,48 @@
+{
+  "id": "{9F9864C8-1C7D-4BC4-8AB5-1B56DCF068D2}",
+  "businessCode": {
+      "documentCode": "COT_80188351"
+  },
+  "parentFolder": [
+      {
+          "id": "{A67376C2-9E36-4563-A97B-9AD66036E1AE}"
+      }
+  ],
+  "documentInfo": {
+      "objectName": "Ficha cotiza",
+      "inceptionDate": "2020-10-15T03:12:06.000-0500",
+      "creationDate": "2020-10-14T22:12:03.000-0500",
+      "owner": "DOI_12345678999",
+      "responsible": "RevenueManagementFinance",
+      "creationUser": "acadmin",
+      "comments": "test.pdf",
+      "template": {}
+  },
+  "contentInfo": {
+      "fileName": "test.pdf",
+      "contentType": "application/pdf",
+      "documentFamily": "pdf",
+      "size": "185590.0"
+  },
+  "categorization": {
+      "taxonomyId": "TX-EC-00010",
+      "documentTypeId": "0060"
+  },
+  "originInfo": {
+      "channel": "GESTCOTIZA",
+      "location": "IN"
+  },
+  "securityLevelInfo": {
+      "securityLevel": 3,
+      "classificationLevel": 5
+  },
+  "preservationInfo": {},
+  "geolocation": {},
+  "functionalId": {
+      "id": "{9F9864C8-1C7D-4BC4-8AB5-1B56DCF068D2}",
+      "version": 1
+  },
+  "lastChange": {
+      "username": "acadmin"
+  }
+}

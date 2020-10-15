@@ -1,0 +1,16 @@
+{
+  "login-page.button": "Iniciar sesion",
+  "login-page.user-input": "Usuario",
+  "login-page.password-input": "Contraseña",
+  "dashboard-page.header": "Bienvenido, cells-attach-demo",
+  "dashboard-page.logout-modal.header": "Cerrar sesión",
+  "dashboard-page.logout-modal.button": "Continuar",
+  "dashboard-page.logout-modal.slot": "¿Quieres cerrar sesión?",
+  "movement-detail.concept": "Concepto",
+  "movement-detail.date": "Fecha",
+  "movement-detail.description": "Descripción",
+  "movement-detail.category": "Categoría",
+  "movement-detail.amount": "Importe",
+  "movement-detail.currentBalance": "Saldo Actual",
+  "movement-detail.badges": "Etiquetas"
+}
